@@ -1,0 +1,12 @@
+.next
+node_modules
+coverage
+dist
+artifacts
+cache
+.env
+.env.local
+.vercel
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
