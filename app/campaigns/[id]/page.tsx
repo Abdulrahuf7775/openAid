@@ -7,16 +7,22 @@ export function generateStaticParams() {
   return campaigns.map((campaign) => ({ id: campaign.id }));
 }
 
-export function generateMetadata({ params }: { params: { id: string } }) {
-  const campaign = getCampaign(params.id);
+type CampaignPageProps = {
+  params: Promise<{ id: string }>;
+};
+
+export async function generateMetadata({ params }: CampaignPageProps) {
+  const { id } = await params;
+  const campaign = getCampaign(id);
 
   return {
     title: campaign?.title ?? "Campaign"
   };
 }
 
-export default function CampaignDetailPage({ params }: { params: { id: string } }) {
-  const campaign = getCampaign(params.id);
+export default async function CampaignDetailPage({ params }: CampaignPageProps) {
+  const { id } = await params;
+  const campaign = getCampaign(id);
 
   if (!campaign) {
     notFound();

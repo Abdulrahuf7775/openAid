@@ -11,19 +11,19 @@
     "deploy:sepolia": "hardhat run scripts/deploy.ts --network sepolia"
   },
   "dependencies": {
-    "@rainbow-me/rainbowkit": "^2.0.8",
+    "@rainbow-me/rainbowkit": "^2.2.8",
     "@tanstack/react-query": "^5.59.16",
     "clsx": "^2.1.1",
     "lucide-react": "^0.468.0",
-    "next": "^9.3.3",
+    "next": "^15.0.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "tailwind-merge": "^2.5.4",
     "viem": "^2.21.45",
-    "wagmi": "^3.6.16"
+    "wagmi": "^2.12.33"
   },
   "devDependencies": {
-    "@nomicfoundation/hardhat-ethers": "^4.0.12",
+    "@nomicfoundation/hardhat-ethers": "^3.0.8",
     "@openzeppelin/contracts": "^5.1.0",
     "@types/node": "^22.10.2",
     "@types/react": "^19.0.1",
@@ -32,7 +32,7 @@
     "dotenv": "^16.4.7",
     "eslint": "^9.16.0",
     "eslint-config-next": "^15.0.4",
-    "hardhat": "^3.7.0",
+    "hardhat": "^2.22.17",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.16",
     "typescript": "^5.7.2"

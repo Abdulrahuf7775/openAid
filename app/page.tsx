@@ -170,7 +170,7 @@ export default function Home() {
               "Receipt proofs turn financial updates into something anyone can verify."
             ].map((quote) => (
               <blockquote key={quote} className="rounded-lg border border-forest/10 bg-sand/40 p-6 text-lg font-semibold leading-8 text-forest">
-                "{quote}"
+                &ldquo;{quote}&rdquo;
               </blockquote>
             ))}
           </div>
